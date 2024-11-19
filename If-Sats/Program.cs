@@ -102,9 +102,31 @@
 
 // #7
 
+
+
+
+int nummer  = Random.Shared.Next(1,100);
+Console.WriteLine("gissa ett nummer mellan 1-100");
 while(true)
 {
-    Console.WriteLine("gissa ett nummer mellan 1-100");
+
+    string svar = Console.ReadLine();
+    int.TryParse(svar, out int nummer2);
+    if(nummer == nummer2)
+    {
+        Console.WriteLine("good job!!");
+        break;
+    }
+    else if(nummer2 < nummer)
+    {
+        Console.WriteLine("higher");
+    }
+    else if(nummer2 > nummer)
+    {
+        Console.WriteLine("lower");
+    }
+    Console.WriteLine("gissa igen");
+    
 }
 
 
