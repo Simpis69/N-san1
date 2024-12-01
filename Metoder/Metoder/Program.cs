@@ -1,32 +1,56 @@
-﻿// static void hello32()
+﻿// // static void hello32()
+// // {
+// //     for (int i = 0; i < 32; i++)
+// //     {
+// //         Console.WriteLine("hellowrodl");
+// //     }
+// // }
+
+// // hello32();
+
+
+
+// // static float multi(float one, float two)
+// // {
+// //     float result = one * two;
+// //     Console.WriteLine($"{result}");
+// //     return result;
+// // }
+
+// // multi(4, 5);
+
+
+
+
+// static double GetNumberInput()
 // {
-//     for (int i = 0; i < 32; i++)
+//     while (true){
+//     Console.WriteLine("skriv ett tal");
+//     string tal = Console.ReadLine();
+//     double f;
+//     bool lycka = double.TryParse(tal, out f);
+
+//     if(lycka == true)
 //     {
-//         Console.WriteLine("hellowrodl");
+//         Console.WriteLine("hejdå");
+//         return f;
+//     }
+//     else
+//     {
+//         Console.WriteLine("skriv ett tal istället");
+//     }
 //     }
 // }
 
-// hello32();
+// double r = GetNumberInput();
+ 
+// static double kvadrat(double square)
+// {
+//     double result = square * square;
+//     Console.WriteLine($"{result}");
+//     return result;
+// }
 
-static void kvadrat(int square)
-{
-Console.WriteLine($"{square * square}");
-}
+// kvadrat(r);
 
-kvadrat(5);
-
-static void multi(float one, float two)
-{
-    Console.WriteLine($"{one * two}");
-}
-
-multi(4, 5);
-
-static void RightTriangleArea(float bas, float hojd)
-{
-    Console.WriteLine($"{bas * hojd}");
-}
-
-multi(4,6);
-
-Console.ReadLine();
+// Console.ReadLine();
