@@ -1,4 +1,5 @@
-﻿using klasser;
+﻿using System.Security.Cryptography.X509Certificates;
+using klasser;
 
 // Book ett = new Book("Bamse", 34);
 // Book två = new Book("ParryHotter", 82);
@@ -25,17 +26,27 @@
 Console.WriteLine("hur många stenar vill du ha?");
 string tal = Console.ReadLine();
 int.TryParse(tal, out int nummer2);
-Console.WriteLine("hur mycket ska din sten väga?");
 
+for (int i = 0; i < nummer2; i++)
+{
+Console.WriteLine("hur mycket ska din sten väga?");
 string vikt = Console.ReadLine();
 int.TryParse(vikt, out int stenvikt);
 
-List<Rock> rocklist = new List<Rock>(); 
-Rock viktis = new Rock(stenvikt);
-Rock stenar = new Rock(nummer2);
-rocklist.Add(viktis);
-rocklist.Add(stenar);
 
+List<Rock> rocklist = new List<Rock>(); 
+
+Rock viktis = new Rock(stenvikt);
+rocklist.Add(viktis);
+// Rock stenar = new Rock(nummer2);
+// rocklist.Add(stenar);
+    
+foreach (Rock roks in rocklist)
+{
+    Console.WriteLine($"dina stenar vägde {roks} kg");
+}
+
+}
 
 
 
